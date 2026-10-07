@@ -7,7 +7,6 @@
 
   let data, rate = 1, voice = null;
 
-  /* ---------- Audio (Web Speech API, en-US) ---------- */
   const synth = window.speechSynthesis;
   function pickVoice() {
     const vs = synth.getVoices();
@@ -42,7 +41,6 @@
   const speakBlock = (b, node) => play(clean(b.text) + (b.text.endsWith('?') ? '?' : ''), node);
   const speakWords = (b, node) => play(words(b.text), node);
 
-  /* ---------- Navegación ---------- */
   document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
     document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === t));
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === t.dataset.view));
@@ -53,7 +51,6 @@
     document.querySelectorAll('.speed-btn').forEach(x => x.classList.toggle('active', x === b));
   });
 
-  /* ---------- Panel de estudio ---------- */
   function renderStudy() {
     const root = $('#study');
     data.categories.forEach(c => {
@@ -72,7 +69,6 @@
     });
   }
 
-  /* ---------- Escucha activa ---------- */
   const ROUND = 10;
   function renderListening() {
     const root = $('#listening');
@@ -123,10 +119,9 @@
         const tray = el('div', 'tray'), bank = el('div', 'tray');
         let order = shuffle(target.map((w, k) => ({ w, k })));
         if (order.map(o => o.w).join() === target.join()) order.reverse();
-        const place = (chip, from, to) => { to.appendChild(chip); };
         order.forEach(o => {
           const chip = el('button', 'chip', o.w);
-          chip.onclick = () => place(chip, null, chip.parentNode === bank ? tray : bank);
+          chip.onclick = () => (chip.parentNode === bank ? tray : bank).appendChild(chip);
           bank.appendChild(chip);
         });
         const check = el('button', 'btn', 'Comprobar');
@@ -143,7 +138,6 @@
     start();
   }
 
-  /* ---------- Conversación restringida ---------- */
   function renderSpeaking() {
     const root = $('#speaking');
     root.appendChild(el('p', 'rule', 'Diálogos hechos solo con los 30 bloques de 1A. Escucha, repite cada línea y luego practica con un compañero: uno es A y el otro es B.'));
@@ -166,12 +160,11 @@
     });
   }
 
-  /* ---------- Carga de datos ---------- */
   fetch('data/level1a.json').then(r => r.json()).then(d => {
     data = d;
     $('#levelTitle').textContent = d.title;
     renderStudy(); renderListening(); renderSpeaking();
   }).catch(() => {
-    $('#levelTitle').textContent = 'No se pudo cargar level1a.json. Abre el proyecto con un servidor local (ver README).';
+    $('#levelTitle').textContent = 'No se pudo cargar level1a.json. Abre el proyecto con un servidor local.';
   });
 })();
