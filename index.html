@@ -8,39 +8,41 @@
   <script src="js/theme.js"></script>
 </head>
 <body>
-  <header class="top">
-    <div class="wrap">
-      <div class="brandrow">
-        <div>
-          <h1>Chunk-Based Mastery</h1>
-          <p id="levelTitle">Cargando…</p>
-        </div>
-        <button id="themeBtn" class="btn" type="button">Modo oscuro</button>
-      </div>
-      <div class="controls">
-        <div class="seg lvls" role="group" aria-label="Subnivel">
-          <button class="lvl-btn active" data-level="1A">Subnivel 1A</button>
-          <button class="lvl-btn" data-level="1B">Subnivel 1B</button>
-        </div>
-        <div class="seg" role="group" aria-label="Velocidad de audio">
-          <button class="speed-btn" data-rate="0.8">0.8x lenta</button>
-          <button class="speed-btn active" data-rate="1">1.0x nativa</button>
-        </div>
+  <div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="shell">
+    <aside class="side">
+      <div class="brand">
+        <span class="mark">CBM</span>
+        <h1>Chunk-Based Mastery</h1>
+        <p id="levelTitle">Cargando…</p>
       </div>
       <nav class="tabs" role="tablist">
         <button role="tab" class="tab active" data-view="study">Estudio</button>
         <button role="tab" class="tab" data-view="listening">Escucha</button>
         <button role="tab" class="tab" data-view="speaking">Conversación</button>
       </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="study" class="view active"></section>
-    <section id="listening" class="view"></section>
-    <section id="speaking" class="view"></section>
-  </main>
-
+      <div class="group">
+        <span class="lbl">Subnivel</span>
+        <div class="seg" role="group" aria-label="Subnivel">
+          <button class="lvl-btn active" data-level="1A">1A</button>
+          <button class="lvl-btn" data-level="1B">1B</button>
+        </div>
+      </div>
+      <div class="group">
+        <span class="lbl">Velocidad del audio</span>
+        <div class="seg" role="group" aria-label="Velocidad de audio">
+          <button class="speed-btn" data-rate="0.8">0.8x lenta</button>
+          <button class="speed-btn active" data-rate="1">1.0x nativa</button>
+        </div>
+      </div>
+      <button id="themeBtn" class="btn" type="button">Modo oscuro</button>
+    </aside>
+    <main>
+      <section id="study" class="view active"></section>
+      <section id="listening" class="view"></section>
+      <section id="speaking" class="view"></section>
+    </main>
+  </div>
   <p id="voiceWarn" class="warn" hidden>Tu navegador no tiene voz en inglés (en-US). Prueba con Chrome o Edge.</p>
   <script src="js/app.js"></script>
 </body>
