@@ -76,8 +76,8 @@
         const card = el('article', 'block');
         card.append(el('p', 'chunk', b.text), el('span', 'linked', b.linked), el('p', 'rule', b.rule));
         const btns = el('div', 'btns');
-        const full = el('button', 'btn fill', '🔊 Bloque completo');
-        const wbw = el('button', 'btn', '🔊 Palabra por palabra');
+        const full = el('button', 'btn fill', 'Escuchar bloque');
+        const wbw = el('button', 'btn', 'Palabra por palabra');
         full.onclick = () => speakBlock(b, card);
         wbw.onclick = () => speakWords(b, card);
         btns.append(full, wbw); card.append(btns);
@@ -108,7 +108,7 @@
       const card = el('div', 'ex');
       card.appendChild(el('div', 'meta', `<span>Ejercicio ${i + 1} de ${ROUND} (bloques 1 a ${data.upTo})</span><span>Ronda: ${score} / Total: ${hits}</span>`));
       card.appendChild(el('h2', '', type === 'pick' ? 'Escucha y elige lo que oyes' : 'Escucha y ordena las palabras'));
-      const listen = el('button', 'btn fill', '🔊 Escuchar'); listen.onclick = () => speakBlock(b, listen);
+      const listen = el('button', 'btn fill', 'Escuchar'); listen.onclick = () => speakBlock(b, listen);
       card.appendChild(listen);
       const fb = el('p', 'fb');
       const done = ok => {
@@ -167,8 +167,8 @@
       wrap.appendChild(el('span', 'rule', 'Tu navegador no permite grabar voz.'));
       return wrap;
     }
-    const btn = el('button', 'btn', '🎙️ Grabar');
-    const cmp = el('button', 'btn', '🔁 Comparar'); cmp.hidden = true;
+    const btn = el('button', 'btn', 'Grabar');
+    const cmp = el('button', 'btn', 'Comparar'); cmp.hidden = true;
     const msg = el('span', 'rule', '');
     const audio = el('audio'); audio.controls = true; audio.hidden = true;
     let url = null;
@@ -183,7 +183,7 @@
         mr.ondataavailable = e => parts.push(e.data);
         mr.onstop = () => {
           stream.getTracks().forEach(t => t.stop());
-          btn.textContent = '🎙️ Grabar'; btn.classList.remove('recording');
+          btn.textContent = 'Grabar'; btn.classList.remove('recording');
           if (rec && rec.mr === mr) rec = null;
           if (url) URL.revokeObjectURL(url);
           url = URL.createObjectURL(new Blob(parts, { type: mr.mimeType }));
@@ -191,7 +191,7 @@
           audio.play();
         };
         mr.start();
-        btn.textContent = '⏹️ Detener'; btn.classList.add('recording'); msg.textContent = 'Grabando…';
+        btn.textContent = 'Detener'; btn.classList.add('recording'); msg.textContent = 'Grabando…';
       } catch (e) {
         msg.textContent = 'No se pudo usar el micrófono. Permite el acceso desde el candado de la barra de direcciones.';
       }
@@ -206,7 +206,7 @@
     root.appendChild(el('p', 'rule', 'Escucha la línea, grábate diciéndola y pulsa Comparar para oír el modelo y tu voz seguidos. Practica con un compañero: uno es A y el otro es B.'));
     data.dialogues.forEach(d => {
       root.appendChild(el('h2', '', d.title));
-      const allBtn = el('button', 'btn fill', '🔊 Escuchar diálogo completo');
+      const allBtn = el('button', 'btn fill', 'Escuchar diálogo completo');
       allBtn.onclick = () => play(d.lines.map(l => l.text), allBtn);
       root.appendChild(allBtn);
       d.lines.forEach(l => {
@@ -214,7 +214,7 @@
         const bub = el('div', 'bubble');
         const tags = l.blocks.map(id => all[id].linked).join('  ');
         bub.append(el('p', '', l.text), el('span', 'rule', tags));
-        const btn = el('button', 'btn', '🔊'); btn.setAttribute('aria-label', `Escuchar línea de ${l.who}`);
+        const btn = el('button', 'btn', 'Escuchar'); btn.setAttribute('aria-label', `Escuchar línea de ${l.who}`);
         btn.onclick = () => play(l.text, bub);
         bub.appendChild(document.createElement('br')); bub.appendChild(btn);
         bub.appendChild(makeRecorder(l.text, bub));
