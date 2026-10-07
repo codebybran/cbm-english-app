@@ -1,62 +1,351 @@
 {
   "level": "1A",
   "title": "Subnivel 1A · Primeros bloques",
-  "categories": [
-    { "id": 1, "name": "Deseos y Necesidades" },
-    { "id": 2, "name": "Acciones Directas" },
-    { "id": 3, "name": "Estados y Ubicación" },
-    { "id": 4, "name": "Conectores y Rellenos" }
-  ],
-  "blocks": [
-    { "id": 1, "cat": 1, "text": "I want to...", "linked": "/ai-uona/", "rule": "La 't' de want se suaviza antes de 'to'." },
-    { "id": 2, "cat": 1, "text": "I need to...", "linked": "/ai-niidtu/", "rule": "La 'd' de need apoya en la 't' de to." },
-    { "id": 3, "cat": 1, "text": "I have to...", "linked": "/ai-jaftu/", "rule": "La 'v' pasa a sonar como 'f'." },
-    { "id": 4, "cat": 1, "text": "I don't want to...", "linked": "/ai-don-uona/", "rule": "La 't' de don't desaparece." },
-    { "id": 5, "cat": 1, "text": "I don't need to...", "linked": "/ai-don-niidtu/", "rule": "La 't' de don't cae." },
-    { "id": 6, "cat": 1, "text": "Do you want to...?", "linked": "/du-iu-uona/", "rule": "Do you se contrae a /diu/." },
-    { "id": 7, "cat": 2, "text": "...go now", "linked": "/gou-nau/", "rule": "Flujo vocal continuo." },
-    { "id": 8, "cat": 2, "text": "...know more", "linked": "/nou-mor/", "rule": "W es muda, se une /nou/ a /mor/." },
-    { "id": 9, "cat": 2, "text": "...eat something", "linked": "/ii-tsom-zing/", "rule": "'T' de eat ataca la 's' de something." },
-    { "id": 10, "cat": 2, "text": "...do this", "linked": "/du-diz/", "rule": "'Th' suena a 'd' vibrada." },
-    { "id": 11, "cat": 2, "text": "...speak with you", "linked": "/spiik-ui-diu/", "rule": "'Th' de with con 'you' forma /diu/." },
-    { "id": 12, "cat": 2, "text": "...buy this", "linked": "/bai-diz/", "rule": "Conexión directa sin pausar." },
-    { "id": 13, "cat": 2, "text": "...see that", "linked": "/sii-dat/", "rule": "Vocal 'ee' se alarga a la 'd' de that." },
-    { "id": 14, "cat": 2, "text": "...help me", "linked": "/jel-mii/", "rule": "'P' de help se ahoga antes de la 'm'." },
-    { "id": 15, "cat": 2, "text": "...wait here", "linked": "/uei-tiar/", "rule": "'T' de wait se conecta con 'here'." },
-    { "id": 16, "cat": 2, "text": "...understand this", "linked": "/an-der-stan-diz/", "rule": "'D' de understand une a 'th' de this." },
-    { "id": 17, "cat": 3, "text": "I am ready", "linked": "/aim-redi/", "rule": "Contracción fluida de I am." },
-    { "id": 18, "cat": 3, "text": "I am not ready", "linked": "/aim-no-tredi/", "rule": "'T' de not entra a la 'r' de ready." },
-    { "id": 19, "cat": 3, "text": "It is here", "linked": "/i-tiz-jiar/", "rule": "'T' de It suena a 'r' suave latina con 'is'." },
-    { "id": 20, "cat": 3, "text": "It is not here", "linked": "/i-tiz-no-tiar/", "rule": "'T' de not se arrastra a 'here'." },
-    { "id": 21, "cat": 3, "text": "Where is...?", "linked": "/ue-riz/", "rule": "'R' de Where se pega a 'is'." },
-    { "id": 22, "cat": 3, "text": "Is it possible?", "linked": "/i-zit-posibl/", "rule": "'S' de Is se pega a 'it'." },
-    { "id": 23, "cat": 4, "text": "...because...", "linked": "/bi-kos/", "rule": "Suele reducirse a /kos/." },
-    { "id": 24, "cat": 4, "text": "...but right now...", "linked": "/ba-rai-nau/", "rule": "'T' finales de 'but' y 'right' caen." },
-    { "id": 25, "cat": 4, "text": "...and then...", "linked": "/an-den/", "rule": "'D' de and desaparece." },
-    { "id": 26, "cat": 4, "text": "...with me", "linked": "/ui-mii/", "rule": "'Th' se desliza directo a la 'm'." },
-    { "id": 27, "cat": 4, "text": "...with you", "linked": "/ui-diu/", "rule": "'Th' de with se vuelve 'd' suave con 'you'." },
-    { "id": 28, "cat": 4, "text": "...for today", "linked": "/fer-tudei/", "rule": "For se relaja a /fer/." },
-    { "id": 29, "cat": 4, "text": "I think that...", "linked": "/ai-zinc-dat/", "rule": "'K' de think salta a 'that'." },
-    { "id": 30, "cat": 4, "text": "It is okay", "linked": "/i-ti-zou-kei/", "rule": "Doble enlace entre it-is-okay." }
+  "chunks": [
+    {
+      "id": 1,
+      "cat": "Deseos y Necesidades",
+      "text": "I want to...",
+      "linked": "/ai-uona/",
+      "rule": "La 't' de want se suaviza antes de 'to'."
+    },
+    {
+      "id": 2,
+      "cat": "Deseos y Necesidades",
+      "text": "I need to...",
+      "linked": "/ai-niidtu/",
+      "rule": "La 'd' de need apoya en la 't' de to."
+    },
+    {
+      "id": 3,
+      "cat": "Deseos y Necesidades",
+      "text": "I have to...",
+      "linked": "/ai-jaftu/",
+      "rule": "La 'v' pasa a sonar como 'f'."
+    },
+    {
+      "id": 4,
+      "cat": "Deseos y Necesidades",
+      "text": "I don't want to...",
+      "linked": "/ai-don-uona/",
+      "rule": "La 't' de don't desaparece."
+    },
+    {
+      "id": 5,
+      "cat": "Deseos y Necesidades",
+      "text": "I don't need to...",
+      "linked": "/ai-don-niidtu/",
+      "rule": "La 't' de don't cae."
+    },
+    {
+      "id": 6,
+      "cat": "Deseos y Necesidades",
+      "text": "Do you want to...?",
+      "linked": "/du-iu-uona/",
+      "rule": "Do you se contrae a /diu/."
+    },
+    {
+      "id": 7,
+      "cat": "Acciones Directas",
+      "text": "...go now",
+      "linked": "/gou-nau/",
+      "rule": "Flujo vocal continuo."
+    },
+    {
+      "id": 8,
+      "cat": "Acciones Directas",
+      "text": "...know more",
+      "linked": "/nou-mor/",
+      "rule": "W es muda, se une /nou/ a /mor/."
+    },
+    {
+      "id": 9,
+      "cat": "Acciones Directas",
+      "text": "...eat something",
+      "linked": "/ii-tsom-zing/",
+      "rule": "'T' de eat ataca la 's' de something."
+    },
+    {
+      "id": 10,
+      "cat": "Acciones Directas",
+      "text": "...do this",
+      "linked": "/du-diz/",
+      "rule": "'Th' suena a 'd' vibrada."
+    },
+    {
+      "id": 11,
+      "cat": "Acciones Directas",
+      "text": "...speak with you",
+      "linked": "/spiik-ui-diu/",
+      "rule": "'Th' de with con 'you' forma /diu/."
+    },
+    {
+      "id": 12,
+      "cat": "Acciones Directas",
+      "text": "...buy this",
+      "linked": "/bai-diz/",
+      "rule": "Conexión directa sin pausar."
+    },
+    {
+      "id": 13,
+      "cat": "Acciones Directas",
+      "text": "...see that",
+      "linked": "/sii-dat/",
+      "rule": "Vocal 'ee' se alarga a la 'd' de that."
+    },
+    {
+      "id": 14,
+      "cat": "Acciones Directas",
+      "text": "...help me",
+      "linked": "/jel-mii/",
+      "rule": "'P' de help se ahoga antes de la 'm'."
+    },
+    {
+      "id": 15,
+      "cat": "Acciones Directas",
+      "text": "...wait here",
+      "linked": "/uei-tiar/",
+      "rule": "'T' de wait se conecta con 'here'."
+    },
+    {
+      "id": 16,
+      "cat": "Acciones Directas",
+      "text": "...understand this",
+      "linked": "/an-der-stan-diz/",
+      "rule": "'D' de understand une a 'th' de this."
+    },
+    {
+      "id": 17,
+      "cat": "Estados y Ubicación",
+      "text": "I am ready",
+      "linked": "/aim-redi/",
+      "rule": "Contracción fluida de I am."
+    },
+    {
+      "id": 18,
+      "cat": "Estados y Ubicación",
+      "text": "I am not ready",
+      "linked": "/aim-no-tredi/",
+      "rule": "'T' de not entra a la 'r' de ready."
+    },
+    {
+      "id": 19,
+      "cat": "Estados y Ubicación",
+      "text": "It is here",
+      "linked": "/i-tiz-jiar/",
+      "rule": "'T' de It suena a 'r' suave latina con 'is'."
+    },
+    {
+      "id": 20,
+      "cat": "Estados y Ubicación",
+      "text": "It is not here",
+      "linked": "/i-tiz-no-tiar/",
+      "rule": "'T' de not se arrastra a 'here'."
+    },
+    {
+      "id": 21,
+      "cat": "Estados y Ubicación",
+      "text": "Where is...?",
+      "linked": "/ue-riz/",
+      "rule": "'R' de Where se pega a 'is'."
+    },
+    {
+      "id": 22,
+      "cat": "Estados y Ubicación",
+      "text": "Is it possible?",
+      "linked": "/i-zit-posibl/",
+      "rule": "'S' de Is se pega a 'it'."
+    },
+    {
+      "id": 23,
+      "cat": "Conectores y Rellenos",
+      "text": "...because...",
+      "linked": "/bi-kos/",
+      "rule": "Suele reducirse a /kos/."
+    },
+    {
+      "id": 24,
+      "cat": "Conectores y Rellenos",
+      "text": "...but right now...",
+      "linked": "/ba-rai-nau/",
+      "rule": "'T' finales de 'but' y 'right' caen."
+    },
+    {
+      "id": 25,
+      "cat": "Conectores y Rellenos",
+      "text": "...and then...",
+      "linked": "/an-den/",
+      "rule": "'D' de and desaparece."
+    },
+    {
+      "id": 26,
+      "cat": "Conectores y Rellenos",
+      "text": "...with me",
+      "linked": "/ui-mii/",
+      "rule": "'Th' se desliza directo a la 'm'."
+    },
+    {
+      "id": 27,
+      "cat": "Conectores y Rellenos",
+      "text": "...with you",
+      "linked": "/ui-diu/",
+      "rule": "'Th' de with se vuelve 'd' suave con 'you'."
+    },
+    {
+      "id": 28,
+      "cat": "Conectores y Rellenos",
+      "text": "...for today",
+      "linked": "/fer-tudei/",
+      "rule": "For se relaja a /fer/."
+    },
+    {
+      "id": 29,
+      "cat": "Conectores y Rellenos",
+      "text": "I think that...",
+      "linked": "/ai-zinc-dat/",
+      "rule": "'K' de think salta a 'that'."
+    },
+    {
+      "id": 30,
+      "cat": "Conectores y Rellenos",
+      "text": "It is okay",
+      "linked": "/i-ti-zou-kei/",
+      "rule": "Doble enlace entre it-is-okay."
+    }
   ],
   "dialogues": [
-    { "title": "¿Nos vamos?", "lines": [
-      { "who": "A", "text": "Do you want to go now?", "blocks": [6, 7] },
-      { "who": "B", "text": "I am not ready, but right now I need to wait here.", "blocks": [18, 24, 2, 15] },
-      { "who": "A", "text": "It is okay. I think that I have to wait with you.", "blocks": [30, 29, 3, 15, 27] },
-      { "who": "B", "text": "I am ready. I want to go with you for today.", "blocks": [17, 1, 7, 27, 28] }
-    ] },
-    { "title": "Algo para comer", "lines": [
-      { "who": "A", "text": "Do you want to eat something?", "blocks": [6, 9] },
-      { "who": "B", "text": "I don't want to eat this. I want to buy this.", "blocks": [4, 9, 10, 1, 12] },
-      { "who": "A", "text": "Is it possible? Where is this?", "blocks": [22, 21] },
-      { "who": "B", "text": "It is not here, because I need to see that.", "blocks": [20, 23, 2, 13] }
-    ] },
-    { "title": "Necesito ayuda", "lines": [
-      { "who": "A", "text": "I don't understand this. Do you want to help me?", "blocks": [4, 16, 6, 14] },
-      { "who": "B", "text": "It is okay. I want to speak with you and then help you.", "blocks": [30, 1, 11, 25, 14] },
-      { "who": "A", "text": "I need to know more. I think that I am ready.", "blocks": [2, 8, 29, 17] },
-      { "who": "B", "text": "I have to go now, but right now it is okay.", "blocks": [3, 7, 24, 30] }
-    ] }
+    {
+      "title": "¿Nos vamos?",
+      "lines": [
+        {
+          "who": "A",
+          "text": "Do you want to go now?",
+          "blocks": [
+            6,
+            7
+          ]
+        },
+        {
+          "who": "B",
+          "text": "I am not ready, but right now I need to wait here.",
+          "blocks": [
+            18,
+            24,
+            2,
+            15
+          ]
+        },
+        {
+          "who": "A",
+          "text": "It is okay. I think that I have to wait with you.",
+          "blocks": [
+            30,
+            29,
+            3,
+            15,
+            27
+          ]
+        },
+        {
+          "who": "B",
+          "text": "I am ready. I want to go with you for today.",
+          "blocks": [
+            17,
+            1,
+            7,
+            27,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Algo para comer",
+      "lines": [
+        {
+          "who": "A",
+          "text": "Do you want to eat something?",
+          "blocks": [
+            6,
+            9
+          ]
+        },
+        {
+          "who": "B",
+          "text": "I don't want to eat this. I want to buy this.",
+          "blocks": [
+            4,
+            9,
+            10,
+            1,
+            12
+          ]
+        },
+        {
+          "who": "A",
+          "text": "Is it possible? Where is this?",
+          "blocks": [
+            22,
+            21
+          ]
+        },
+        {
+          "who": "B",
+          "text": "It is not here, because I need to see that.",
+          "blocks": [
+            20,
+            23,
+            2,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Necesito ayuda",
+      "lines": [
+        {
+          "who": "A",
+          "text": "I don't understand this. Do you want to help me?",
+          "blocks": [
+            4,
+            16,
+            6,
+            14
+          ]
+        },
+        {
+          "who": "B",
+          "text": "It is okay. I want to speak with you and then help you.",
+          "blocks": [
+            30,
+            1,
+            11,
+            25,
+            14
+          ]
+        },
+        {
+          "who": "A",
+          "text": "I need to know more. I think that I am ready.",
+          "blocks": [
+            2,
+            8,
+            29,
+            17
+          ]
+        },
+        {
+          "who": "B",
+          "text": "I have to go now, but right now it is okay.",
+          "blocks": [
+            3,
+            7,
+            24,
+            30
+          ]
+        }
+      ]
+    }
   ]
 }
