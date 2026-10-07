@@ -51,11 +51,22 @@
     document.querySelectorAll('.speed-btn').forEach(x => x.classList.toggle('active', x === b));
   });
 
+  const LEVELS = { '1A': 'data/level1a.json', '1B': 'data/level1b.json' };
+  const store = {}, all = {};
+  const norm = d => {
+    const list = d.blocks || d.chunks, cats = d.categories || [];
+    list.forEach(b => {
+      b.catName = typeof b.cat === 'number' ? (cats.find(c => c.id === b.cat) || {}).name : b.cat;
+      all[b.id] = b;
+    });
+    return { title: d.title, blocks: list, dialogues: d.dialogues || [] };
+  };
+
   function renderStudy() {
-    const root = $('#study');
-    data.categories.forEach(c => {
-      root.appendChild(el('h2', '', `${c.name}`));
-      data.blocks.filter(b => b.cat === c.id).forEach(b => {
+    const root = $('#study'); root.innerHTML = '';
+    [...new Set(data.blocks.map(b => b.catName))].forEach(name => {
+      root.appendChild(el('h2', '', name));
+      data.blocks.filter(b => b.catName === name).forEach(b => {
         const card = el('article', 'block');
         card.append(el('p', 'chunk', b.text), el('span', 'linked', b.linked), el('p', 'rule', b.rule));
         const btns = el('div', 'btns');
@@ -139,17 +150,17 @@
   }
 
   function renderSpeaking() {
-    const root = $('#speaking');
-    root.appendChild(el('p', 'rule', 'Diálogos hechos solo con los 30 bloques de 1A. Escucha, repite cada línea y luego practica con un compañero: uno es A y el otro es B.'));
+    const root = $('#speaking'); root.innerHTML = '';
+    root.appendChild(el('p', 'rule', 'Escucha, repite cada línea y practica con un compañero: uno es A y el otro es B.'));
     data.dialogues.forEach(d => {
       root.appendChild(el('h2', '', d.title));
-      const all = el('button', 'btn fill', '🔊 Escuchar diálogo completo');
-      all.onclick = () => play(d.lines.map(l => l.text), all);
-      root.appendChild(all);
+      const allBtn = el('button', 'btn fill', '🔊 Escuchar diálogo completo');
+      allBtn.onclick = () => play(d.lines.map(l => l.text), allBtn);
+      root.appendChild(allBtn);
       d.lines.forEach(l => {
         const row = el('div', 'line ' + l.who);
         const bub = el('div', 'bubble');
-        const tags = l.blocks.map(id => data.blocks.find(b => b.id === id).linked).join('  ');
+        const tags = l.blocks.map(id => all[id].linked).join('  ');
         bub.append(el('p', '', l.text), el('span', 'rule', tags));
         const btn = el('button', 'btn', '🔊'); btn.setAttribute('aria-label', `Escuchar línea de ${l.who}`);
         btn.onclick = () => play(l.text, bub);
@@ -160,11 +171,16 @@
     });
   }
 
-  fetch('data/level1a.json').then(r => r.json()).then(d => {
-    data = d;
-    $('#levelTitle').textContent = d.title;
+  function show(level) {
+    data = store[level];
+    $('#levelTitle').textContent = data.title;
+    document.querySelectorAll('.lvl-btn').forEach(b => b.classList.toggle('active', b.dataset.level === level));
+    synth && synth.cancel();
     renderStudy(); renderListening(); renderSpeaking();
-  }).catch(() => {
-    $('#levelTitle').textContent = 'No se pudo cargar level1a.json. Abre el proyecto con un servidor local.';
-  });
+  }
+  document.querySelectorAll('.lvl-btn').forEach(b => b.onclick = () => show(b.dataset.level));
+
+  Promise.all(Object.entries(LEVELS).map(([k, u]) => fetch(u).then(r => r.json()).then(d => { store[k] = norm(d); })))
+    .then(() => show('1A'))
+    .catch(() => { $('#levelTitle').textContent = 'No se pudieron cargar los datos. Abre el proyecto con un servidor local.'; });
 })();

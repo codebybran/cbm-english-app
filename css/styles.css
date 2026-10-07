@@ -55,3 +55,6 @@ h2{font:700 1.15rem var(--serif);margin:24px 0 10px}
   .block .btns{grid-column:2;grid-row:1/4}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.lvls{margin-right:8px;margin-bottom:6px}
+.lvl-btn{border:0;background:none;padding:6px 14px}
+.lvl-btn.active{background:var(--accent);color:var(--accent-ink)}
