@@ -57,6 +57,9 @@
   };
   const store = {}, all = {};
   let ES = { words: {}, chunks: {} };
+  let IPA = {};
+  const ipa = t => t.replace(/[A-Za-z']+/g, w => IPA[w.toLowerCase()] || w);
+  const ipaEl = t => el('span', 'ipa', '<b>IPA</b>' + ipa(t));
   function meaning(text, tr, nota) {
     const d = el('details', 'mean');
     const sm = el('summary', 'btn', 'Ver significado');
@@ -93,7 +96,7 @@
       root.appendChild(el('h2', '', name));
       data.chunks.filter(b => b.cat === name).forEach(b => {
         const card = el('article', 'block');
-        card.append(el('p', 'chunk', b.text), el('span', 'linked', b.linked), el('p', 'rule', b.rule));
+        card.append(el('p', 'chunk', b.text), el('span', 'linked', b.linked), ipaEl(b.text), el('p', 'rule', b.rule));
         const btns = el('div', 'btns');
         const full = el('button', 'btn fill', 'Escuchar bloque');
         const wbw = el('button', 'btn', 'Palabra por palabra');
@@ -234,7 +237,7 @@
         const row = el('div', 'line ' + l.who);
         const bub = el('div', 'bubble');
         const tags = l.linked || '';
-        bub.append(el('p', '', l.text), el('span', 'rule', tags));
+        bub.append(el('p', '', l.text), el('span', 'rule', tags), ipaEl(l.text));
         const btn = el('button', 'btn', 'Escuchar'); btn.setAttribute('aria-label', `Escuchar línea de ${l.who}`);
         btn.onclick = () => play(l.text, bub);
         bub.appendChild(document.createElement('br')); bub.appendChild(btn);
@@ -256,7 +259,7 @@
   }
   document.querySelectorAll('.lvl-btn').forEach(b => b.onclick = () => show(b.dataset.level));
 
-  Promise.all([fetch('data/es.json').then(r => r.json()).then(d => { ES = d; }).catch(() => {}), ...Object.entries(LEVELS).map(([k, v]) => fetch(v.url).then(r => r.json()).then(d => { store[k] = norm(d, v.upTo); }))])
+  Promise.all([fetch('data/ipa.json').then(r => r.json()).then(d => { IPA = d; }).catch(() => {}), fetch('data/es.json').then(r => r.json()).then(d => { ES = d; }).catch(() => {}), ...Object.entries(LEVELS).map(([k, v]) => fetch(v.url).then(r => r.json()).then(d => { store[k] = norm(d, v.upTo); }))])
     .then(() => { const saved = ls.get(KEY.level, '1A'); show(LEVELS[saved] ? saved : '1A'); })
     .catch(() => { $('#levelTitle').textContent = 'No se pudieron cargar los datos. Abre el proyecto con un servidor local.'; });
 })();

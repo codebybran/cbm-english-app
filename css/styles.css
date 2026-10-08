@@ -111,3 +111,6 @@ h2{font:600 1.1rem Georgia,serif;margin:14px 0 2px;grid-column:1/-1}
 .mt{font-weight:600;margin:10px 0 0;padding-top:10px;border-top:1px solid var(--bd)}
 .mn{margin:6px 0 0;color:var(--muted);font-size:.88rem}
 .bubble>.mean{grid-column:1/-1}
+.ipa{display:block;font:.9rem/1.5 "Segoe UI","Noto Sans",system-ui,sans-serif;color:var(--muted)}
+.ipa b{font-size:.68rem;letter-spacing:.08em;margin-right:8px;padding:1px 6px;border-radius:4px;color:var(--accent);background:var(--bb);border:1px solid var(--bd)}
+.bubble>.ipa{grid-column:1}
