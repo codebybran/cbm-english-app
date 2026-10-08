@@ -56,6 +56,25 @@
     '1B': { url: 'data/level1b.json', upTo: 60 }
   };
   const store = {}, all = {};
+  let ES = { words: {}, chunks: {} };
+  function meaning(text, tr, nota) {
+    const d = el('details', 'mean');
+    const sm = el('summary', 'btn', 'Ver significado');
+    d.appendChild(sm);
+    d.ontoggle = () => { sm.textContent = d.open ? 'Ocultar significado' : 'Ver significado'; };
+    const box = el('div', 'mean-box');
+    [...new Set(words(text).map(w => w.toLowerCase()))].forEach(w => {
+      const g = ES.words[w]; if (!g) return;
+      const row = el('div', 'mw');
+      row.append(el('b', '', w), document.createTextNode(' · ' + g[0] + (g.length > 1 ? ' — ' + g.slice(1).join(', ') : '')));
+      box.appendChild(row);
+    });
+    if (tr) box.appendChild(el('p', 'mt', tr));
+    if (nota) box.appendChild(el('p', 'mn', nota));
+    d.appendChild(box);
+    return d;
+  }
+
   const norm = (d, upTo) => {
     d.chunks.forEach(b => { all[b.id] = b; });
     return { title: d.title, chunks: d.chunks, dialogues: d.dialogues || [], upTo };
@@ -81,6 +100,7 @@
         full.onclick = () => speakBlock(b, card);
         wbw.onclick = () => speakWords(b, card);
         btns.append(full, wbw); card.append(btns);
+        card.append(meaning(b.text, (ES.chunks[b.id] || [])[0], (ES.chunks[b.id] || [])[1]));
         root.appendChild(card);
       });
     });
@@ -115,6 +135,7 @@
         if (ok) { score++; hits++; ls.set(KEY.hits, hits); }
         fb.className = 'fb ' + (ok ? 'ok' : 'bad');
         fb.textContent = ok ? '¡Correcto!' : `Respuesta: ${b.text}`;
+        card.appendChild(meaning(b.text, (ES.chunks[b.id] || [])[0], (ES.chunks[b.id] || [])[1]));
         const nx = el('button', 'btn fill', i + 1 < ROUND ? 'Siguiente' : 'Ver resultado');
         nx.onclick = () => { i++; next(); }; card.appendChild(nx); nx.focus();
       };
@@ -212,12 +233,13 @@
       d.lines.forEach(l => {
         const row = el('div', 'line ' + l.who);
         const bub = el('div', 'bubble');
-        const tags = l.blocks.map(id => all[id].linked).join('  ');
+        const tags = l.linked || '';
         bub.append(el('p', '', l.text), el('span', 'rule', tags));
         const btn = el('button', 'btn', 'Escuchar'); btn.setAttribute('aria-label', `Escuchar línea de ${l.who}`);
         btn.onclick = () => play(l.text, bub);
         bub.appendChild(document.createElement('br')); bub.appendChild(btn);
         bub.appendChild(makeRecorder(l.text, bub));
+        bub.appendChild(meaning(l.text, l.es));
         row.append(el('div', 'who', l.who), bub);
         root.appendChild(row);
       });
@@ -234,7 +256,7 @@
   }
   document.querySelectorAll('.lvl-btn').forEach(b => b.onclick = () => show(b.dataset.level));
 
-  Promise.all(Object.entries(LEVELS).map(([k, v]) => fetch(v.url).then(r => r.json()).then(d => { store[k] = norm(d, v.upTo); })))
+  Promise.all([fetch('data/es.json').then(r => r.json()).then(d => { ES = d; }).catch(() => {}), ...Object.entries(LEVELS).map(([k, v]) => fetch(v.url).then(r => r.json()).then(d => { store[k] = norm(d, v.upTo); }))])
     .then(() => { const saved = ls.get(KEY.level, '1A'); show(LEVELS[saved] ? saved : '1A'); })
     .catch(() => { $('#levelTitle').textContent = 'No se pudieron cargar los datos. Abre el proyecto con un servidor local.'; });
 })();

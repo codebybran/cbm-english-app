@@ -2,61 +2,414 @@
   "level": "1B",
   "title": "Subnivel 1B · Tiempo, Capacidad y Pensamiento",
   "chunks": [
-    {"id": 31, "cat": "Tiempo y Frecuencia", "text": "...right now", "linked": "/rai-nau/", "rule": "La 't' final de right desaparece."},
-    {"id": 32, "cat": "Tiempo y Frecuencia", "text": "...later today", "linked": "/lei-der-tudei/", "rule": "La 't' de later suena como 'r' suave latina."},
-    {"id": 33, "cat": "Tiempo y Frecuencia", "text": "...every day", "linked": "/ev-ri-dei/", "rule": "Every se reduce a dos sílabas (/ev-ri/)."},
-    {"id": 34, "cat": "Tiempo y Frecuencia", "text": "...this time", "linked": "/diz-taim/", "rule": "La 's' de this se conecta con la 't' de time."},
-    {"id": 35, "cat": "Tiempo y Frecuencia", "text": "...always...", "linked": "/ol-weis/", "rule": "Sonido vocal abierto al inicio."},
-    {"id": 36, "cat": "Tiempo y Frecuencia", "text": "...never...", "linked": "/ne-ver/", "rule": "La 'r' final se proyecta suavemente."},
-    {"id": 37, "cat": "Capacidad y Preguntas", "text": "I can...", "linked": "/ai-ken/", "rule": "Can se pronuncia débil (/ken/)."},
-    {"id": 38, "cat": "Capacidad y Preguntas", "text": "I can't...", "linked": "/ai-kant/", "rule": "Se enfatiza el corte seco final para la negativa."},
-    {"id": 39, "cat": "Capacidad y Preguntas", "text": "Can you...?", "linked": "/ke-niu/", "rule": "La 'n' de can se pega a 'you'."},
-    {"id": 40, "cat": "Capacidad y Preguntas", "text": "What is...?", "linked": "/ua-riz/", "rule": "La 't' de what se vuelve 'r' suave con 'is'."},
-    {"id": 41, "cat": "Capacidad y Preguntas", "text": "Why do you...?", "linked": "/uai-diu/", "rule": "Do you se reduce a /diu/."},
-    {"id": 42, "cat": "Capacidad y Preguntas", "text": "How much is...?", "linked": "/jau-ma-chiz/", "rule": "La 'ch' de much se pega a 'is'."},
-    {"id": 43, "cat": "Capacidad y Preguntas", "text": "Can I have...?", "linked": "/ke-nai-jav/", "rule": "Doble enlace: /ke-nai/ y la 'v' cae suave."},
-    {"id": 44, "cat": "Capacidad y Preguntas", "text": "Who is...?", "linked": "/ju-wiz/", "rule": "Se crea una 'w' fantasma de transición."},
-    {"id": 45, "cat": "Pensamiento y Conocimiento", "text": "I know that...", "linked": "/ai-nou-dat/", "rule": "Know suena /nou/, enlazando directo con that."},
-    {"id": 46, "cat": "Pensamiento y Conocimiento", "text": "I don't know", "linked": "/ai-don-nou/", "rule": "La 't' de don't desaparece por completo."},
-    {"id": 47, "cat": "Pensamiento y Conocimiento", "text": "I think so", "linked": "/ai-zing-ksou/", "rule": "La 'k' de think se apoya en la 's' de so."},
-    {"id": 48, "cat": "Pensamiento y Conocimiento", "text": "I remember...", "linked": "/ai-ri-mem-ber/", "rule": "Ritmo fluido sin pausas entre sílabas."},
-    {"id": 49, "cat": "Pensamiento y Conocimiento", "text": "I forgot...", "linked": "/ai-fer-gat/", "rule": "For se reduce a /fer/."},
-    {"id": 50, "cat": "Pensamiento y Conocimiento", "text": "Are you sure?", "linked": "/ar-iu-shur/", "rule": "La 'r' de are se conecta con 'you'."},
-    {"id": 51, "cat": "Pensamiento y Conocimiento", "text": "I am sure", "linked": "/aim-shur/", "rule": "Contracción natural de I am."},
-    {"id": 52, "cat": "Pensamiento y Conocimiento", "text": "It makes sense", "linked": "/it-meik-sens/", "rule": "La 's' de makes y sense fluyen de corrido."},
-    {"id": 53, "cat": "Interacción y Cortesía", "text": "Give me a moment", "linked": "/giv-mi-e-mou-ment/", "rule": "Give me se reduce coloquialmente a /gi-mi/."},
-    {"id": 54, "cat": "Interacción y Cortesía", "text": "Let me see", "linked": "/le-mi-sii/", "rule": "La 't' de let desaparece antes de la 'm'."},
-    {"id": 55, "cat": "Interacción y Cortesía", "text": "Don't worry", "linked": "/don-ua-ri/", "rule": "La 't' de don't desaparece antes de 'w'."},
-    {"id": 56, "cat": "Interacción y Cortesía", "text": "Of course", "linked": "/ev-kors/", "rule": "Of suena con sonido de 'v' suave."},
-    {"id": 57, "cat": "Interacción y Cortesía", "text": "No problem", "linked": "/nou-pro-blem/", "rule": "Flujo vocal directo."},
-    {"id": 58, "cat": "Interacción y Cortesía", "text": "See you later", "linked": "/sii-iu-lei-der/", "rule": "La 't' de later se convierte en 'r' suave."},
-    {"id": 59, "cat": "Interacción y Cortesía", "text": "Have a good day", "linked": "/ja-ve-gud-dei/", "rule": "La 'e' de have une con 'a' (/ja-ve/)."},
-    {"id": 60, "cat": "Interacción y Cortesía", "text": "Tell me more", "linked": "/tel-mi-mor/", "rule": "Conexión fluida entre consonantes /l/ y /m/."}
+    {
+      "id": 31,
+      "cat": "Tiempo y Frecuencia",
+      "text": "...right now",
+      "linked": "/rai-nau/",
+      "rule": "La 't' final de right desaparece."
+    },
+    {
+      "id": 32,
+      "cat": "Tiempo y Frecuencia",
+      "text": "...later today",
+      "linked": "/lei-der-tudei/",
+      "rule": "La 't' de later suena como 'r' suave latina."
+    },
+    {
+      "id": 33,
+      "cat": "Tiempo y Frecuencia",
+      "text": "...every day",
+      "linked": "/ev-ri-dei/",
+      "rule": "Every se reduce a dos sílabas (/ev-ri/)."
+    },
+    {
+      "id": 34,
+      "cat": "Tiempo y Frecuencia",
+      "text": "...this time",
+      "linked": "/diz-taim/",
+      "rule": "La 's' de this se conecta con la 't' de time."
+    },
+    {
+      "id": 35,
+      "cat": "Tiempo y Frecuencia",
+      "text": "...always...",
+      "linked": "/ol-weis/",
+      "rule": "Sonido vocal abierto al inicio."
+    },
+    {
+      "id": 36,
+      "cat": "Tiempo y Frecuencia",
+      "text": "...never...",
+      "linked": "/ne-ver/",
+      "rule": "La 'r' final se proyecta suavemente."
+    },
+    {
+      "id": 37,
+      "cat": "Capacidad y Preguntas",
+      "text": "I can...",
+      "linked": "/ai-ken/",
+      "rule": "Can se pronuncia débil (/ken/)."
+    },
+    {
+      "id": 38,
+      "cat": "Capacidad y Preguntas",
+      "text": "I can't...",
+      "linked": "/ai-kant/",
+      "rule": "Se enfatiza el corte seco final para la negativa."
+    },
+    {
+      "id": 39,
+      "cat": "Capacidad y Preguntas",
+      "text": "Can you...?",
+      "linked": "/ke-niu/",
+      "rule": "La 'n' de can se pega a 'you'."
+    },
+    {
+      "id": 40,
+      "cat": "Capacidad y Preguntas",
+      "text": "What is...?",
+      "linked": "/ua-riz/",
+      "rule": "La 't' de what se vuelve 'r' suave con 'is'."
+    },
+    {
+      "id": 41,
+      "cat": "Capacidad y Preguntas",
+      "text": "Why do you...?",
+      "linked": "/uai-diu/",
+      "rule": "Do you se reduce a /diu/."
+    },
+    {
+      "id": 42,
+      "cat": "Capacidad y Preguntas",
+      "text": "How much is...?",
+      "linked": "/jau-ma-chiz/",
+      "rule": "La 'ch' de much se pega a 'is'."
+    },
+    {
+      "id": 43,
+      "cat": "Capacidad y Preguntas",
+      "text": "Can I have...?",
+      "linked": "/ke-nai-jav/",
+      "rule": "Doble enlace: /ke-nai/ y la 'v' cae suave."
+    },
+    {
+      "id": 44,
+      "cat": "Capacidad y Preguntas",
+      "text": "Who is...?",
+      "linked": "/ju-wiz/",
+      "rule": "Se crea una 'w' fantasma de transición."
+    },
+    {
+      "id": 45,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "I know that...",
+      "linked": "/ai-nou-dat/",
+      "rule": "Know suena /nou/, enlazando directo con that."
+    },
+    {
+      "id": 46,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "I don't know",
+      "linked": "/ai-don-nou/",
+      "rule": "La 't' de don't desaparece por completo."
+    },
+    {
+      "id": 47,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "I think so",
+      "linked": "/ai-zin-ksou/",
+      "rule": "La 'k' de think se apoya en la 's' de so."
+    },
+    {
+      "id": 48,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "I remember...",
+      "linked": "/ai-ri-mem-ber/",
+      "rule": "Ritmo fluido sin pausas entre sílabas."
+    },
+    {
+      "id": 49,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "I forgot...",
+      "linked": "/ai-fer-gat/",
+      "rule": "For se reduce a /fer/."
+    },
+    {
+      "id": 50,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "Are you sure?",
+      "linked": "/a-riu-shur/",
+      "rule": "La 'r' de are se conecta con 'you'."
+    },
+    {
+      "id": 51,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "I am sure",
+      "linked": "/aim-shur/",
+      "rule": "Contracción natural de I am."
+    },
+    {
+      "id": 52,
+      "cat": "Pensamiento y Conocimiento",
+      "text": "It makes sense",
+      "linked": "/it-meiks-sens/",
+      "rule": "La 's' de makes y sense fluyen de corrido."
+    },
+    {
+      "id": 53,
+      "cat": "Interacción y Cortesía",
+      "text": "Give me a moment",
+      "linked": "/gi-mi-a-mou-ment/",
+      "rule": "Give me se reduce coloquialmente a /gi-mi/."
+    },
+    {
+      "id": 54,
+      "cat": "Interacción y Cortesía",
+      "text": "Let me see",
+      "linked": "/le-mi-sii/",
+      "rule": "La 't' de let desaparece antes de la 'm'."
+    },
+    {
+      "id": 55,
+      "cat": "Interacción y Cortesía",
+      "text": "Don't worry",
+      "linked": "/don-ua-ri/",
+      "rule": "La 't' de don't desaparece antes de 'w'."
+    },
+    {
+      "id": 56,
+      "cat": "Interacción y Cortesía",
+      "text": "Of course",
+      "linked": "/ev-kors/",
+      "rule": "Of suena con sonido de 'v' suave."
+    },
+    {
+      "id": 57,
+      "cat": "Interacción y Cortesía",
+      "text": "No problem",
+      "linked": "/nou-pro-blem/",
+      "rule": "Flujo vocal directo."
+    },
+    {
+      "id": 58,
+      "cat": "Interacción y Cortesía",
+      "text": "See you later",
+      "linked": "/sii-iu-lei-der/",
+      "rule": "La 't' de later se convierte en 'r' suave."
+    },
+    {
+      "id": 59,
+      "cat": "Interacción y Cortesía",
+      "text": "Have a good day",
+      "linked": "/ja-va-gud-dei/",
+      "rule": "La 'e' de have es muda; la 'v' se une a la 'a': /ja-va/."
+    },
+    {
+      "id": 60,
+      "cat": "Interacción y Cortesía",
+      "text": "Tell me more",
+      "linked": "/tel-mi-mor/",
+      "rule": "Conexión fluida entre consonantes /l/ y /m/."
+    }
   ],
   "dialogues": [
-    { "title": "Pidiendo ayuda", "lines": [
-      { "who": "A", "text": "Can you help me?", "blocks": [39, 14] },
-      { "who": "B", "text": "Of course. Give me a moment.", "blocks": [56, 53] },
-      { "who": "A", "text": "What is this? I don't know.", "blocks": [40, 46] },
-      { "who": "B", "text": "Let me see. It makes sense.", "blocks": [54, 52] },
-      { "who": "A", "text": "Are you sure?", "blocks": [50] },
-      { "who": "B", "text": "I am sure. No problem.", "blocks": [51, 57] }
-    ] },
-    { "title": "Planes y tiempo", "lines": [
-      { "who": "A", "text": "How much is this?", "blocks": [42] },
-      { "who": "B", "text": "Let me see. Right now I don't know.", "blocks": [54, 31, 46] },
-      { "who": "A", "text": "Can you tell me more later today?", "blocks": [39, 60, 32] },
-      { "who": "B", "text": "Of course. See you later.", "blocks": [56, 58] },
-      { "who": "A", "text": "Have a good day. Don't worry.", "blocks": [59, 55] },
-      { "who": "B", "text": "No problem.", "blocks": [57] }
-    ] },
-    { "title": "Recuerdos", "lines": [
-      { "who": "A", "text": "I remember this. Who is here?", "blocks": [48, 44] },
-      { "who": "B", "text": "I forgot. I never know.", "blocks": [49, 36] },
-      { "who": "A", "text": "Why do you never remember?", "blocks": [41, 36, 48] },
-      { "who": "B", "text": "I think so, but I can't remember this time.", "blocks": [47, 38, 48, 34] },
-      { "who": "A", "text": "Don't worry. I always help you.", "blocks": [55, 35] },
-      { "who": "B", "text": "Of course. I know that.", "blocks": [56, 45] }
-    ] }
+    {
+      "title": "Pidiendo ayuda",
+      "lines": [
+        {
+          "who": "A",
+          "text": "Can you help me?",
+          "blocks": [
+            39,
+            14
+          ],
+          "linked": "/ke-niu-jel-mii/",
+          "es": "¿Puedes ayudarme?"
+        },
+        {
+          "who": "B",
+          "text": "Of course. Give me a moment.",
+          "blocks": [
+            56,
+            53
+          ],
+          "linked": "/ev-kors/ /gi-mi-a-mou-ment/",
+          "es": "Claro. Dame un momento."
+        },
+        {
+          "who": "A",
+          "text": "What is this? I don't know.",
+          "blocks": [
+            40,
+            46
+          ],
+          "linked": "/ua-riz-diz/ /ai-don-nou/",
+          "es": "¿Qué es esto? No sé."
+        },
+        {
+          "who": "B",
+          "text": "Let me see. It makes sense.",
+          "blocks": [
+            54,
+            52
+          ],
+          "linked": "/le-mi-sii/ /it-meiks-sens/",
+          "es": "Déjame ver. Tiene sentido."
+        },
+        {
+          "who": "A",
+          "text": "Are you sure?",
+          "blocks": [
+            50
+          ],
+          "linked": "/a-riu-shur/",
+          "es": "¿Estás seguro?"
+        },
+        {
+          "who": "B",
+          "text": "I am sure. No problem.",
+          "blocks": [
+            51,
+            57
+          ],
+          "linked": "/aim-shur/ /nou-pro-blem/",
+          "es": "Estoy seguro. Sin problema."
+        }
+      ]
+    },
+    {
+      "title": "Planes y tiempo",
+      "lines": [
+        {
+          "who": "A",
+          "text": "How much is this?",
+          "blocks": [
+            42
+          ],
+          "linked": "/jau-ma-chiz-diz/",
+          "es": "¿Cuánto cuesta esto?"
+        },
+        {
+          "who": "B",
+          "text": "Let me see. Right now I don't know.",
+          "blocks": [
+            54,
+            31,
+            46
+          ],
+          "linked": "/le-mi-sii/ /rai-nau/ /ai-don-nou/",
+          "es": "Déjame ver. Ahora mismo no sé."
+        },
+        {
+          "who": "A",
+          "text": "Can you tell me more later today?",
+          "blocks": [
+            39,
+            60,
+            32
+          ],
+          "linked": "/ke-niu/ /tel-mi-mor/ /lei-der-tudei/",
+          "es": "¿Puedes contarme más hoy más tarde?"
+        },
+        {
+          "who": "B",
+          "text": "Of course. See you later.",
+          "blocks": [
+            56,
+            58
+          ],
+          "linked": "/ev-kors/ /sii-iu-lei-der/",
+          "es": "Claro. Hasta luego."
+        },
+        {
+          "who": "A",
+          "text": "Have a good day. Don't worry.",
+          "blocks": [
+            59,
+            55
+          ],
+          "linked": "/ja-va-gud-dei/ /don-ua-ri/",
+          "es": "Que tengas un buen día. No te preocupes."
+        },
+        {
+          "who": "B",
+          "text": "No problem.",
+          "blocks": [
+            57
+          ],
+          "linked": "/nou-pro-blem/",
+          "es": "Sin problema."
+        }
+      ]
+    },
+    {
+      "title": "Recuerdos",
+      "lines": [
+        {
+          "who": "A",
+          "text": "I remember this. Who is here?",
+          "blocks": [
+            48,
+            44
+          ],
+          "linked": "/ai-ri-mem-ber-diz/ /ju-wiz-jiar/",
+          "es": "Recuerdo esto. ¿Quién está aquí?"
+        },
+        {
+          "who": "B",
+          "text": "I forgot. I never know.",
+          "blocks": [
+            49,
+            36
+          ],
+          "linked": "/ai-fer-gat/ /ai-ne-ver-nou/",
+          "es": "Lo olvidé. Nunca sé."
+        },
+        {
+          "who": "A",
+          "text": "Why do you never remember?",
+          "blocks": [
+            41,
+            36,
+            48
+          ],
+          "linked": "/uai-diu/ /ne-ver/ /ri-mem-ber/",
+          "es": "¿Por qué nunca recuerdas?"
+        },
+        {
+          "who": "B",
+          "text": "I think so, but I can't remember this time.",
+          "blocks": [
+            47,
+            38,
+            48,
+            34
+          ],
+          "linked": "/ai-zin-ksou/ /ba-tai-kant/ /ri-mem-ber/ /diz-taim/",
+          "es": "Creo que sí, pero esta vez no puedo recordar."
+        },
+        {
+          "who": "A",
+          "text": "Don't worry. I always help you.",
+          "blocks": [
+            55,
+            35
+          ],
+          "linked": "/don-ua-ri/ /ai-ol-weis/ /jel-piu/",
+          "es": "No te preocupes. Siempre te ayudo."
+        },
+        {
+          "who": "B",
+          "text": "Of course. I know that.",
+          "blocks": [
+            56,
+            45
+          ],
+          "linked": "/ev-kors/ /ai-nou-dat/",
+          "es": "Claro. Sé eso."
+        }
+      ]
+    }
   ]
 }

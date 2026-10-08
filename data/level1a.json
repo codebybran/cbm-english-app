@@ -41,8 +41,8 @@
       "id": 6,
       "cat": "Deseos y Necesidades",
       "text": "Do you want to...?",
-      "linked": "/du-iu-uona/",
-      "rule": "Do you se contrae a /diu/."
+      "linked": "/diu-uona/",
+      "rule": "Do you se contrae a /diu/; want to suena /uona/."
     },
     {
       "id": 7,
@@ -223,7 +223,9 @@
           "blocks": [
             6,
             7
-          ]
+          ],
+          "linked": "/diu-uona-gou-nau/",
+          "es": "¿Quieres irte ahora?"
         },
         {
           "who": "B",
@@ -233,7 +235,9 @@
             24,
             2,
             15
-          ]
+          ],
+          "linked": "/aim-no-tredi/ /ba-rai-nau/ /ai-niidtu/ /uei-tiar/",
+          "es": "No estoy listo, pero ahora mismo necesito esperar aquí."
         },
         {
           "who": "A",
@@ -244,7 +248,9 @@
             3,
             15,
             27
-          ]
+          ],
+          "linked": "/i-ti-zou-kei/ /ai-zinc-dat/ /ai-jaftu/ /uei-tui-diu/",
+          "es": "Está bien. Creo que tengo que esperar contigo."
         },
         {
           "who": "B",
@@ -255,7 +261,9 @@
             7,
             27,
             28
-          ]
+          ],
+          "linked": "/aim-redi/ /ai-uona/ /gou-ui-diu/ /fer-tudei/",
+          "es": "Estoy listo. Quiero ir contigo por hoy."
         }
       ]
     },
@@ -268,7 +276,9 @@
           "blocks": [
             6,
             9
-          ]
+          ],
+          "linked": "/diu-uona/ /ii-tsom-zing/",
+          "es": "¿Quieres comer algo?"
         },
         {
           "who": "B",
@@ -279,7 +289,9 @@
             10,
             1,
             12
-          ]
+          ],
+          "linked": "/ai-don-uona/ /ii-tdiz/ /ai-uona/ /bai-diz/",
+          "es": "No quiero comer esto. Quiero comprar esto."
         },
         {
           "who": "A",
@@ -287,7 +299,9 @@
           "blocks": [
             22,
             21
-          ]
+          ],
+          "linked": "/i-zit-posibl/ /ue-riz-diz/",
+          "es": "¿Es posible? ¿Dónde está esto?"
         },
         {
           "who": "B",
@@ -297,7 +311,9 @@
             23,
             2,
             13
-          ]
+          ],
+          "linked": "/i-tiz-no-tiar/ /bi-kos/ /ai-niidtu/ /sii-dat/",
+          "es": "No está aquí, porque necesito ver eso."
         }
       ]
     },
@@ -312,7 +328,9 @@
             16,
             6,
             14
-          ]
+          ],
+          "linked": "/ai-don-an-der-stan-diz/ /diu-uona/ /jel-mii/",
+          "es": "No entiendo esto. ¿Quieres ayudarme?"
         },
         {
           "who": "B",
@@ -323,7 +341,9 @@
             11,
             25,
             14
-          ]
+          ],
+          "linked": "/i-ti-zou-kei/ /ai-uona/ /spiik-ui-diu/ /an-den/ /jel-piu/",
+          "es": "Está bien. Quiero hablar contigo y luego ayudarte."
         },
         {
           "who": "A",
@@ -333,7 +353,9 @@
             8,
             29,
             17
-          ]
+          ],
+          "linked": "/ai-niidtu/ /nou-mor/ /ai-zinc-dat-aim-redi/",
+          "es": "Necesito saber más. Creo que estoy listo."
         },
         {
           "who": "B",
@@ -343,7 +365,9 @@
             7,
             24,
             30
-          ]
+          ],
+          "linked": "/ai-jaftu/ /gou-nau/ /ba-rai-nau/ /i-ti-zou-kei/",
+          "es": "Tengo que irme ahora, pero por ahora está bien."
         }
       ]
     }

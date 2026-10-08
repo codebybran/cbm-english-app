@@ -102,3 +102,12 @@ h2{font:600 1.1rem Georgia,serif;margin:14px 0 2px;grid-column:1/-1}
   .ex{padding:20px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}.block:hover{transform:none}}
+.mean{margin-top:10px}
+.mean summary{display:inline-block;list-style:none;user-select:none}
+.mean summary::-webkit-details-marker{display:none}
+.mean-box{margin-top:10px;padding:14px 16px;border-radius:12px;background:var(--bb);border:1px solid var(--bd)}
+.mw{padding:3px 0;font-size:.92rem}
+.mw b{font:600 1rem Georgia,serif}
+.mt{font-weight:600;margin:10px 0 0;padding-top:10px;border-top:1px solid var(--bd)}
+.mn{margin:6px 0 0;color:var(--muted);font-size:.88rem}
+.bubble>.mean{grid-column:1/-1}
