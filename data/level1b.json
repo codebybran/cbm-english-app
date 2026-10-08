@@ -13,7 +13,7 @@
       "id": 32,
       "cat": "Tiempo y Frecuencia",
       "text": "...later today",
-      "linked": "/lei-der-tudei/",
+      "linked": "/lei-rer-tudei/",
       "rule": "La 't' de later suena como 'r' suave latina."
     },
     {
@@ -27,14 +27,14 @@
       "id": 34,
       "cat": "Tiempo y Frecuencia",
       "text": "...this time",
-      "linked": "/diz-taim/",
+      "linked": "/dis-taim/",
       "rule": "La 's' de this se conecta con la 't' de time."
     },
     {
       "id": 35,
       "cat": "Tiempo y Frecuencia",
       "text": "...always...",
-      "linked": "/ol-weis/",
+      "linked": "/ol-ueis/",
       "rule": "Sonido vocal abierto al inicio."
     },
     {
@@ -97,7 +97,7 @@
       "id": 44,
       "cat": "Capacidad y Preguntas",
       "text": "Who is...?",
-      "linked": "/ju-wiz/",
+      "linked": "/ju-uiz/",
       "rule": "Se crea una 'w' fantasma de transición."
     },
     {
@@ -111,7 +111,7 @@
       "id": 46,
       "cat": "Pensamiento y Conocimiento",
       "text": "I don't know",
-      "linked": "/ai-don-nou/",
+      "linked": "/ai-doun-nou/",
       "rule": "La 't' de don't desaparece por completo."
     },
     {
@@ -174,7 +174,7 @@
       "id": 55,
       "cat": "Interacción y Cortesía",
       "text": "Don't worry",
-      "linked": "/don-ua-ri/",
+      "linked": "/doun-ueri/",
       "rule": "La 't' de don't desaparece antes de 'w'."
     },
     {
@@ -188,14 +188,14 @@
       "id": 57,
       "cat": "Interacción y Cortesía",
       "text": "No problem",
-      "linked": "/nou-pro-blem/",
+      "linked": "/nou-pra-blem/",
       "rule": "Flujo vocal directo."
     },
     {
       "id": 58,
       "cat": "Interacción y Cortesía",
       "text": "See you later",
-      "linked": "/sii-iu-lei-der/",
+      "linked": "/sii-iu-lei-rer/",
       "rule": "La 't' de later se convierte en 'r' suave."
     },
     {
@@ -244,7 +244,7 @@
             40,
             46
           ],
-          "linked": "/ua-riz-diz/ /ai-don-nou/",
+          "linked": "/ua-riz-dis/ /ai-doun-nou/",
           "es": "¿Qué es esto? No sé."
         },
         {
@@ -273,7 +273,7 @@
             51,
             57
           ],
-          "linked": "/aim-shur/ /nou-pro-blem/",
+          "linked": "/aim-shur/ /nou-pra-blem/",
           "es": "Estoy seguro. Sin problema."
         }
       ]
@@ -287,7 +287,7 @@
           "blocks": [
             42
           ],
-          "linked": "/jau-ma-chiz-diz/",
+          "linked": "/jau-ma-chiz-dis/",
           "es": "¿Cuánto cuesta esto?"
         },
         {
@@ -298,7 +298,7 @@
             31,
             46
           ],
-          "linked": "/le-mi-sii/ /rai-nau/ /ai-don-nou/",
+          "linked": "/le-mi-sii/ /rai-nau/ /ai-doun-nou/",
           "es": "Déjame ver. Ahora mismo no sé."
         },
         {
@@ -309,7 +309,7 @@
             60,
             32
           ],
-          "linked": "/ke-niu/ /tel-mi-mor/ /lei-der-tudei/",
+          "linked": "/ke-niu/ /tel-mi-mor/ /lei-rer-tudei/",
           "es": "¿Puedes contarme más hoy más tarde?"
         },
         {
@@ -319,7 +319,7 @@
             56,
             58
           ],
-          "linked": "/ev-kors/ /sii-iu-lei-der/",
+          "linked": "/ev-kors/ /sii-iu-lei-rer/",
           "es": "Claro. Hasta luego."
         },
         {
@@ -329,7 +329,7 @@
             59,
             55
           ],
-          "linked": "/ja-va-gud-dei/ /don-ua-ri/",
+          "linked": "/ja-va-gud-dei/ /doun-ueri/",
           "es": "Que tengas un buen día. No te preocupes."
         },
         {
@@ -338,7 +338,7 @@
           "blocks": [
             57
           ],
-          "linked": "/nou-pro-blem/",
+          "linked": "/nou-pra-blem/",
           "es": "Sin problema."
         }
       ]
@@ -353,7 +353,7 @@
             48,
             44
           ],
-          "linked": "/ai-ri-mem-ber-diz/ /ju-wiz-jiar/",
+          "linked": "/ai-ri-mem-ber-dis/ /ju-uiz-jir/",
           "es": "Recuerdo esto. ¿Quién está aquí?"
         },
         {
@@ -386,7 +386,7 @@
             48,
             34
           ],
-          "linked": "/ai-zin-ksou/ /ba-tai-kant/ /ri-mem-ber/ /diz-taim/",
+          "linked": "/ai-zin-ksou/ /ba-tai-kant/ /ri-mem-ber/ /dis-taim/",
           "es": "Creo que sí, pero esta vez no puedo recordar."
         },
         {
@@ -396,7 +396,7 @@
             55,
             35
           ],
-          "linked": "/don-ua-ri/ /ai-ol-weis/ /jel-piu/",
+          "linked": "/doun-ueri/ /ai-ol-ueis/ /jel-piu/",
           "es": "No te preocupes. Siempre te ayudo."
         },
         {

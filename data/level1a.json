@@ -6,7 +6,7 @@
       "id": 1,
       "cat": "Deseos y Necesidades",
       "text": "I want to...",
-      "linked": "/ai-uona/",
+      "linked": "/ai-uana/",
       "rule": "La 't' de want se suaviza antes de 'to'."
     },
     {
@@ -27,21 +27,21 @@
       "id": 4,
       "cat": "Deseos y Necesidades",
       "text": "I don't want to...",
-      "linked": "/ai-don-uona/",
+      "linked": "/ai-doun-uana/",
       "rule": "La 't' de don't desaparece."
     },
     {
       "id": 5,
       "cat": "Deseos y Necesidades",
       "text": "I don't need to...",
-      "linked": "/ai-don-niidtu/",
+      "linked": "/ai-doun-niidtu/",
       "rule": "La 't' de don't cae."
     },
     {
       "id": 6,
       "cat": "Deseos y Necesidades",
       "text": "Do you want to...?",
-      "linked": "/diu-uona/",
+      "linked": "/diu-uana/",
       "rule": "Do you se contrae a /diu/; want to suena /uona/."
     },
     {
@@ -62,14 +62,14 @@
       "id": 9,
       "cat": "Acciones Directas",
       "text": "...eat something",
-      "linked": "/ii-tsom-zing/",
+      "linked": "/ii-tsam-zin/",
       "rule": "'T' de eat ataca la 's' de something."
     },
     {
       "id": 10,
       "cat": "Acciones Directas",
       "text": "...do this",
-      "linked": "/du-diz/",
+      "linked": "/du-dis/",
       "rule": "'Th' suena a 'd' vibrada."
     },
     {
@@ -83,7 +83,7 @@
       "id": 12,
       "cat": "Acciones Directas",
       "text": "...buy this",
-      "linked": "/bai-diz/",
+      "linked": "/bai-dis/",
       "rule": "Conexión directa sin pausar."
     },
     {
@@ -104,14 +104,14 @@
       "id": 15,
       "cat": "Acciones Directas",
       "text": "...wait here",
-      "linked": "/uei-tiar/",
+      "linked": "/uei-tjir/",
       "rule": "'T' de wait se conecta con 'here'."
     },
     {
       "id": 16,
       "cat": "Acciones Directas",
       "text": "...understand this",
-      "linked": "/an-der-stan-diz/",
+      "linked": "/an-der-stan-dis/",
       "rule": "'D' de understand une a 'th' de this."
     },
     {
@@ -125,21 +125,21 @@
       "id": 18,
       "cat": "Estados y Ubicación",
       "text": "I am not ready",
-      "linked": "/aim-no-tredi/",
+      "linked": "/aim-na-tredi/",
       "rule": "'T' de not entra a la 'r' de ready."
     },
     {
       "id": 19,
       "cat": "Estados y Ubicación",
       "text": "It is here",
-      "linked": "/i-tiz-jiar/",
+      "linked": "/i-riz-jir/",
       "rule": "'T' de It suena a 'r' suave latina con 'is'."
     },
     {
       "id": 20,
       "cat": "Estados y Ubicación",
       "text": "It is not here",
-      "linked": "/i-tiz-no-tiar/",
+      "linked": "/i-riz-na-tjir/",
       "rule": "'T' de not se arrastra a 'here'."
     },
     {
@@ -153,7 +153,7 @@
       "id": 22,
       "cat": "Estados y Ubicación",
       "text": "Is it possible?",
-      "linked": "/i-zit-posibl/",
+      "linked": "/i-zit-pasibol/",
       "rule": "'S' de Is se pega a 'it'."
     },
     {
@@ -202,14 +202,14 @@
       "id": 29,
       "cat": "Conectores y Rellenos",
       "text": "I think that...",
-      "linked": "/ai-zinc-dat/",
+      "linked": "/ai-zink-dat/",
       "rule": "'K' de think salta a 'that'."
     },
     {
       "id": 30,
       "cat": "Conectores y Rellenos",
       "text": "It is okay",
-      "linked": "/i-ti-zou-kei/",
+      "linked": "/i-ri-zou-kei/",
       "rule": "Doble enlace entre it-is-okay."
     }
   ],
@@ -224,7 +224,7 @@
             6,
             7
           ],
-          "linked": "/diu-uona-gou-nau/",
+          "linked": "/diu-uana-gou-nau/",
           "es": "¿Quieres irte ahora?"
         },
         {
@@ -236,7 +236,7 @@
             2,
             15
           ],
-          "linked": "/aim-no-tredi/ /ba-rai-nau/ /ai-niidtu/ /uei-tiar/",
+          "linked": "/aim-na-tredi/ /ba-rai-nau/ /ai-niidtu/ /uei-tjir/",
           "es": "No estoy listo, pero ahora mismo necesito esperar aquí."
         },
         {
@@ -249,7 +249,7 @@
             15,
             27
           ],
-          "linked": "/i-ti-zou-kei/ /ai-zinc-dat/ /ai-jaftu/ /uei-tui-diu/",
+          "linked": "/i-ri-zou-kei/ /ai-zink-dat/ /ai-jaftu/ /ueit-ui-diu/",
           "es": "Está bien. Creo que tengo que esperar contigo."
         },
         {
@@ -262,7 +262,7 @@
             27,
             28
           ],
-          "linked": "/aim-redi/ /ai-uona/ /gou-ui-diu/ /fer-tudei/",
+          "linked": "/aim-redi/ /ai-uana/ /gou-ui-diu/ /fer-tudei/",
           "es": "Estoy listo. Quiero ir contigo por hoy."
         }
       ]
@@ -277,7 +277,7 @@
             6,
             9
           ],
-          "linked": "/diu-uona/ /ii-tsom-zing/",
+          "linked": "/diu-uana/ /ii-tsam-zin/",
           "es": "¿Quieres comer algo?"
         },
         {
@@ -290,7 +290,7 @@
             1,
             12
           ],
-          "linked": "/ai-don-uona/ /ii-tdiz/ /ai-uona/ /bai-diz/",
+          "linked": "/ai-doun-uana/ /ii-tdis/ /ai-uana/ /bai-dis/",
           "es": "No quiero comer esto. Quiero comprar esto."
         },
         {
@@ -300,7 +300,7 @@
             22,
             21
           ],
-          "linked": "/i-zit-posibl/ /ue-riz-diz/",
+          "linked": "/i-zit-pasibol/ /ue-riz-dis/",
           "es": "¿Es posible? ¿Dónde está esto?"
         },
         {
@@ -312,7 +312,7 @@
             2,
             13
           ],
-          "linked": "/i-tiz-no-tiar/ /bi-kos/ /ai-niidtu/ /sii-dat/",
+          "linked": "/i-riz-na-tjir/ /bi-kos/ /ai-niidtu/ /sii-dat/",
           "es": "No está aquí, porque necesito ver eso."
         }
       ]
@@ -329,7 +329,7 @@
             6,
             14
           ],
-          "linked": "/ai-don-an-der-stan-diz/ /diu-uona/ /jel-mii/",
+          "linked": "/ai-doun-an-der-stan-dis/ /diu-uana/ /jel-mii/",
           "es": "No entiendo esto. ¿Quieres ayudarme?"
         },
         {
@@ -342,7 +342,7 @@
             25,
             14
           ],
-          "linked": "/i-ti-zou-kei/ /ai-uona/ /spiik-ui-diu/ /an-den/ /jel-piu/",
+          "linked": "/i-ri-zou-kei/ /ai-uana/ /spiik-ui-diu/ /an-den/ /jel-piu/",
           "es": "Está bien. Quiero hablar contigo y luego ayudarte."
         },
         {
@@ -354,7 +354,7 @@
             29,
             17
           ],
-          "linked": "/ai-niidtu/ /nou-mor/ /ai-zinc-dat-aim-redi/",
+          "linked": "/ai-niidtu/ /nou-mor/ /ai-zink-dat-aim-redi/",
           "es": "Necesito saber más. Creo que estoy listo."
         },
         {
@@ -366,7 +366,7 @@
             24,
             30
           ],
-          "linked": "/ai-jaftu/ /gou-nau/ /ba-rai-nau/ /i-ti-zou-kei/",
+          "linked": "/ai-jaftu/ /gou-nau/ /ba-rai-nau/ /i-ri-zou-kei/",
           "es": "Tengo que irme ahora, pero por ahora está bien."
         }
       ]
