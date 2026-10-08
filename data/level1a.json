@@ -104,7 +104,7 @@
       "id": 15,
       "cat": "Acciones Directas",
       "text": "...wait here",
-      "linked": "/uei-tjir/",
+      "linked": "/ueit-jir/",
       "rule": "'T' de wait se conecta con 'here'."
     },
     {
@@ -125,8 +125,8 @@
       "id": 18,
       "cat": "Estados y Ubicación",
       "text": "I am not ready",
-      "linked": "/aim-na-tredi/",
-      "rule": "'T' de not entra a la 'r' de ready."
+      "linked": "/aim-nat-redi/",
+      "rule": "La 't' de not se suaviza y se une a 'ready'."
     },
     {
       "id": 19,
@@ -139,7 +139,7 @@
       "id": 20,
       "cat": "Estados y Ubicación",
       "text": "It is not here",
-      "linked": "/i-riz-na-tjir/",
+      "linked": "/i-riz-nat-jir/",
       "rule": "'T' de not se arrastra a 'here'."
     },
     {
@@ -236,7 +236,7 @@
             2,
             15
           ],
-          "linked": "/aim-na-tredi/ /ba-rai-nau/ /ai-niidtu/ /uei-tjir/",
+          "linked": "/aim-nat-redi/ /ba-rai-nau/ /ai-niidtu/ /ueit-jir/",
           "es": "No estoy listo, pero ahora mismo necesito esperar aquí."
         },
         {
@@ -290,7 +290,7 @@
             1,
             12
           ],
-          "linked": "/ai-doun-uana/ /ii-tdis/ /ai-uana/ /bai-dis/",
+          "linked": "/ai-doun-uana/ /iit-dis/ /ai-uana/ /bai-dis/",
           "es": "No quiero comer esto. Quiero comprar esto."
         },
         {
@@ -312,7 +312,7 @@
             2,
             13
           ],
-          "linked": "/i-riz-na-tjir/ /bi-kos/ /ai-niidtu/ /sii-dat/",
+          "linked": "/i-riz-nat-jir/ /bi-kos/ /ai-niidtu/ /sii-dat/",
           "es": "No está aquí, porque necesito ver eso."
         }
       ]
@@ -354,7 +354,7 @@
             29,
             17
           ],
-          "linked": "/ai-niidtu/ /nou-mor/ /ai-zink-dat-aim-redi/",
+          "linked": "/ai-niidtu/ /nou-mor/ /ai-zink-dat/ /aim-redi/",
           "es": "Necesito saber más. Creo que estoy listo."
         },
         {
