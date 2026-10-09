@@ -19,6 +19,7 @@
       <nav class="tabs" role="tablist">
         <button role="tab" class="tab active" data-view="study">Estudio</button>
         <button role="tab" class="tab" data-view="listening">Escucha</button>
+        <button role="tab" class="tab" data-view="dictation">Dictado</button>
         <button role="tab" class="tab" data-view="speaking">Conversación</button>
       </nav>
       <div class="group">
@@ -33,6 +34,7 @@
         <div class="seg" role="group" aria-label="Velocidad de audio">
           <button class="speed-btn" data-rate="0.8">0.8x lenta</button>
           <button class="speed-btn active" data-rate="1">1.0x nativa</button>
+          <button class="speed-btn" data-rate="1.2">1.2x rápida</button>
         </div>
       </div>
       <button id="themeBtn" class="btn" type="button">Modo oscuro</button>
@@ -40,10 +42,12 @@
     <main>
       <section id="study" class="view active"></section>
       <section id="listening" class="view"></section>
+      <section id="dictation" class="view"></section>
       <section id="speaking" class="view"></section>
     </main>
   </div>
   <p id="voiceWarn" class="warn" hidden>Tu navegador no tiene voz en inglés (en-US). Prueba con Chrome o Edge.</p>
   <script src="js/app.js"></script>
+  <script src="js/dictation.js"></script>
 </body>
 </html>

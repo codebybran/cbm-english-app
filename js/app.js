@@ -256,9 +256,11 @@
     document.querySelectorAll('.lvl-btn').forEach(b => b.classList.toggle('active', b.dataset.level === level));
     synth && synth.cancel();
     renderStudy(); renderListening(); renderSpeaking();
+    window.CBM.hooks.forEach(f => f());
   }
   document.querySelectorAll('.lvl-btn').forEach(b => b.onclick = () => show(b.dataset.level));
 
+  window.CBM = { $, el, shuffle, words, clean, play, ls, meaning, ipaEl, hooks: [], get data() { return data; }, get store() { return store; }, get ES() { return ES; } };
   Promise.all([fetch('data/ipa.json').then(r => r.json()).then(d => { IPA = d; }).catch(() => {}), fetch('data/es.json').then(r => r.json()).then(d => { ES = d; }).catch(() => {}), ...Object.entries(LEVELS).map(([k, v]) => fetch(v.url).then(r => r.json()).then(d => { store[k] = norm(d, v.upTo); }))])
     .then(() => { const saved = ls.get(KEY.level, '1A'); show(LEVELS[saved] ? saved : '1A'); })
     .catch(() => { $('#levelTitle').textContent = 'No se pudieron cargar los datos. Abre el proyecto con un servidor local.'; });

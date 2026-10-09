@@ -114,3 +114,17 @@ h2{font:600 1.1rem Georgia,serif;margin:14px 0 2px;grid-column:1/-1}
 .ipa{display:block;font:.9rem/1.5 "Segoe UI","Noto Sans",system-ui,sans-serif;color:var(--muted)}
 .ipa b{font-size:.68rem;letter-spacing:.08em;margin-right:8px;padding:1px 6px;border-radius:4px;color:var(--accent);background:var(--bb);border:1px solid var(--bd)}
 .bubble>.ipa{grid-column:1}
+.dq{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:14px 0;font:1.25rem/1.8 Georgia,serif}
+.dw.ok{color:var(--ok)}
+.dw.bad{color:var(--bad);text-decoration:underline wavy}
+.dict-in{width:100%;min-height:84px;padding:14px 16px;border-radius:12px;border:1px solid var(--bd);background:var(--bb);color:var(--ink);font:1.1rem/1.5 Georgia,serif;resize:vertical;margin-top:12px}
+.gap{padding:4px 8px;border-radius:8px;border:1px solid var(--bd);background:var(--bb);color:var(--ink);font:1.1rem Georgia,serif;text-align:center}
+.gap.ok{border-color:var(--ok)}
+.gap.bad{border-color:var(--bad)}
+.fixw{color:var(--ok);font-weight:600}
+.said{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.stepbar{display:flex;gap:8px;margin:12px 0 4px}
+.stepbar i{flex:1;height:5px;border-radius:3px;background:var(--bd)}
+.stepbar i.on{background:var(--accent2)}
+.ex .linked{display:inline-block;margin:4px 0}
+.speed-btn{padding:10px 2px;font-size:.78rem}
