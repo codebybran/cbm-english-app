@@ -92,9 +92,10 @@
 
   function renderStudy() {
     const root = $('#study'); root.innerHTML = '';
-    [...new Set(data.chunks.map(b => b.cat))].forEach(name => {
-      root.appendChild(el('h2', '', name));
-      data.chunks.filter(b => b.cat === name).forEach(b => {
+    const list = Object.values(all).filter(b => b.id <= data.upTo), lv = id => Object.keys(LEVELS).find(k => id <= LEVELS[k].upTo);
+    [...new Set(list.map(b => b.cat))].forEach(name => {
+      root.appendChild(el('h2', '', name + '<span class="lv">' + lv(list.find(b => b.cat === name).id) + '</span>'));
+      list.filter(b => b.cat === name).forEach(b => {
         const card = el('article', 'block');
         card.append(el('p', 'chunk', b.text), el('span', 'linked', b.linked), ipaEl(b.text), el('p', 'rule', b.rule));
         const btns = el('div', 'btns');
