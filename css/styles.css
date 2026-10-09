@@ -129,3 +129,9 @@ h2{font:600 1.1rem Georgia,serif;margin:14px 0 2px;grid-column:1/-1}
 .ex .linked{display:inline-block;margin:4px 0}
 .speed-btn{padding:10px 2px;font-size:.78rem}
 .lv{font:600 .68rem "Segoe UI",sans-serif;letter-spacing:.08em;margin-left:10px;padding:2px 7px;border-radius:6px;color:var(--accent);background:var(--bb);border:1px solid var(--bd);vertical-align:middle}
+.bubble.me{border-left-color:var(--accent2);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent2) 30%,transparent),var(--sh)}
+.bubble>.simout,.bubble>.simctl{grid-column:1/-1}
+.simctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
+.simctl .btn{margin:0}
+.chk{display:block;margin:12px 0;color:var(--muted)}
+.chk input{margin-right:8px}
