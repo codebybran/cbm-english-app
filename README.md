@@ -19,3 +19,6 @@ Luego abre http://127.0.0.1:8000 en Chrome o Edge.
 - css/styles.css: estilos
 - js/app.js: lógica y audio (Web Speech API, en-US)
 - data/level1a.json: datos del Subnivel 1A
+
+## Versión en línea
+https://codebybran.github.io/cbm-english-app/
