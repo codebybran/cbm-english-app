@@ -137,6 +137,7 @@
       const fb = el('p', 'fb');
       const done = ok => {
         if (ok) { score++; hits++; ls.set(KEY.hits, hits); }
+        if (window.CBM.srs) window.CBM.srs.record(b.id, ok);
         fb.className = 'fb ' + (ok ? 'ok' : 'bad');
         fb.textContent = ok ? '¡Correcto!' : `Respuesta: ${b.text}`;
         card.appendChild(meaning(b.text, (ES.chunks[b.id] || [])[0], (ES.chunks[b.id] || [])[1]));

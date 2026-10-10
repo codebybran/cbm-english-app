@@ -135,3 +135,9 @@ h2{font:600 1.1rem Georgia,serif;margin:14px 0 2px;grid-column:1/-1}
 .simctl .btn{margin:0}
 .chk{display:block;margin:12px 0;color:var(--muted)}
 .chk input{margin-right:8px}
+.srs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.srs div{padding:8px 12px;border-radius:10px;background:var(--bb);border:1px solid var(--bd);text-align:center;min-width:76px}
+.srs b{display:block;font:600 1.2rem Georgia,serif}
+.srs span{font-size:.72rem;color:var(--muted)}
+.tabs{gap:3px}
+.tab{padding:9px 14px}
